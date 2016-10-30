@@ -463,8 +463,8 @@ class DataTables:
             displayStart = 'start'
             displayLength = 'length'
 
-        if (self.request_values[displayStart] != '') \
-                and (self.request_values[displayLength] != -1):
+        if (self.request_values.get(displayStart) != '') \
+                and (self.request_values.get(displayLength) != -1):
             pages.start = int(self.request_values[displayStart])
             pages.length = int(self.request_values[displayLength])
 
