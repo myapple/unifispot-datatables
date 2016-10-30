@@ -465,8 +465,8 @@ class DataTables:
 
         if (self.request_values.get(displayStart) != '') \
                 and (self.request_values.get(displayLength) != -1):
-            pages.start = int(self.request_values[displayStart])
-            pages.length = int(self.request_values[displayLength])
+            pages.start = int(self.request_values.get(displayStart,0))
+            pages.length = int(self.request_values.get(displayLength,10))
 
         offset = pages.start + pages.length
         self.query = self.query.slice(pages.start, offset)
