@@ -206,7 +206,7 @@ class DataTables:
             totalDisplayRecords = 'recordsFiltered'
             data = 'data'
 
-        output[echo] = str(int(self.request_values[echo]))
+        output[echo] = str(int(self.request_values.get(echo,0)))
         output[totalRecords] = str(self.cardinality)
         output[totalDisplayRecords] = str(self.cardinality_filtered)
 
