@@ -6,7 +6,7 @@ __VERSION__ = '0.4.2'
 
 
 setup(
-    name='sqlalchemy-datatables',
+    name='unifispot-datatables',
     version=__VERSION__,
     description='SQLAlchemy integration of jQuery DataTables',
     long_description=open('README.rst').read(),
