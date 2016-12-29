@@ -52,7 +52,7 @@ def clean_regex(regex):
     :rtype: str with regex to use with database
     '''
     # copy for return
-    ret_regex = regex
+    ret_regex = str(regex)
 
     # these characters are escaped (all except alternation | and escape \)
     # see http://www.regular-expressions.info/refquick.html
